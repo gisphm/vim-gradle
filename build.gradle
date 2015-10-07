@@ -1,0 +1,21 @@
+def userHome = System.properties['user.home']
+def vimHome = "${userHome}/.vim"
+
+task installVimGradle(type: Copy) {
+    group 'vim-gradle'
+    description 'Installs Gradle syntax highlighting for Vim.'
+
+    from(projectDir) {
+        include 'syntax/gradle.vim'
+        include 'ftdetect/gradle.vim'
+    }
+    into vimHome
+}
+
+task uninstallVimGradle(type: Delete) {
+    group 'vim-gradle'
+    description 'Uninstalls Gradle syntax highlighting for Vim.'
+
+    delete "${vimHome}/syntax/gradle.vim",
+           "${vimHome}/ftdetect/gradle.vim"
+}

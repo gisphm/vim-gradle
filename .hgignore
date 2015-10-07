@@ -1,0 +1,4 @@
+syntax: glob
+
+.gradle
+.DS_Store
