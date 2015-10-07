@@ -8,6 +8,7 @@ task installVimGradle(type: Copy) {
     from(projectDir) {
         include 'syntax/gradle.vim'
         include 'ftdetect/gradle.vim'
+        include 'compiler/gradle.vim'
     }
     into vimHome
 }
