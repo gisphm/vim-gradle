@@ -35,11 +35,16 @@ syn keyword javaPluginMethod manifest
 syn keyword gradleProjectScript allprojects ant artifacts buildscript
 syn keyword gradleProjectScript configurations dependencies repositories
 syn keyword gradleProjectScript subprojects
+" Java Plugin Script Block
+syn keyword javaPluginScript jar test
 
-syn keyword gradleRepositories maven ivy flatDir
+syn keyword gradleRepositories flatDir ivy jcenter
+syn keyword gradleRepositories maven mavenCentral mavenLocal
 syn keyword gradleConfigurations classpath compile runtime testCompile testRuntime
 syn keyword gradleConfigurations providedCompile providedRuntime
-syn keyword gradleFunction gradleApi localGroovy mavenLocal mavenCentral jcenter
+syn keyword gradleFunction gradleApi localGroovy
+syn keyword gradleInnerBlock dirs from include into url
+syn keyword gradleInnerBlock credentials password username
 syn keyword groovyType def
 
 " ============
@@ -75,13 +80,15 @@ hi def link gradleProjectMethod     Function
 hi def link javaPluginMethod        Function
 " Script Blocks
 hi def link gradleProjectScript     Statement
-hi def link gradleRepositories      Statement
-hi def link gradleConfigurations    Statement
+hi def link javaPluginScript        Statement
+hi def link gradleInnerBlock        Statement
 " Groovy
 hi def link groovyPlaceholder       Identifier
 hi def link groovyString            String
 hi def link groovyMapKeys           Constant
 hi def link groovyComment           Comment
 
+hi def link gradleRepositories      Function
+hi def link gradleConfigurations    Statement
 hi def link gradleFunction          Function
 hi def link groovyType              Type
