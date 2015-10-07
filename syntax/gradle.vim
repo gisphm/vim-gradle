@@ -34,7 +34,7 @@ syn keyword javaPluginMethod manifest
 " Gradle Project Script Blocks
 syn keyword gradleProjectScript allprojects ant artifacts buildscript
 syn keyword gradleProjectScript configurations dependencies repositories
-syn keyword gradleProjectScript subproject
+syn keyword gradleProjectScript subprojects
 
 syn keyword gradleRepositories maven ivy flatDir
 syn keyword gradleConfigurations classpath compile runtime testCompile testRuntime
@@ -46,8 +46,9 @@ syn keyword groovyType def
 " Matches
 " ============
 " Groovy Strings
+syn match groovyPlaceholder contained '\${.\+}'
 syn match groovyString "'.*'"
-syn match groovyString '".*"'
+syn match groovyString '".*"' contains=groovyPlaceholder
 syn match groovyString "'''\_.*'''"
 syn match groovyString '"""\_.*"""'
 " Groovy Comments
@@ -77,8 +78,9 @@ hi def link gradleProjectScript     Statement
 hi def link gradleRepositories      Statement
 hi def link gradleConfigurations    Statement
 " Groovy
+hi def link groovyPlaceholder       Identifier
 hi def link groovyString            String
-hi def link groovyMapKeys           Keyword
+hi def link groovyMapKeys           Constant
 hi def link groovyComment           Comment
 
 hi def link gradleFunction          Function
