@@ -1,9 +1,9 @@
 def userHome = System.properties['user.home']
 def vimHome = "${userHome}/.vim"
 
-task installVimGradle(type: Copy) {
+task installVimball(type: Copy) {
     group 'vim-gradle'
-    description 'Installs Gradle syntax highlighting for Vim.'
+    description 'Installs Gradle syntax highlighting for Vim as Vimball .'
 
     from(projectDir) {
         include 'syntax/gradle.vim'
@@ -13,11 +13,31 @@ task installVimGradle(type: Copy) {
     into vimHome
 }
 
-task uninstallVimGradle(type: Delete) {
+task uninstallVimball(type: Delete) {
     group 'vim-gradle'
-    description 'Uninstalls Gradle syntax highlighting for Vim.'
+    description 'Uninstalls Gradle syntax highlighting Vimball.'
 
     delete "${vimHome}/syntax/gradle.vim",
            "${vimHome}/ftdetect/gradle.vim",
            "${vimHome}/compiler/gradle.vim"
+}
+
+task installBundle(type: Copy) {
+    group 'vim-gradle'
+    description 'Installs Gradle syntax highlighting for Vim as bundle.'
+
+    from(projectDir) {
+        include 'syntax/gradle.vim'
+        include 'ftdetect/gradle.vim'
+        include 'compiler/gradle.vim'
+        include 'LICENSE.txt'
+    }
+    into "${vimHome}/bundle/vim-gradle"
+}
+
+task uninstallBundle(type: Delete) {
+    group 'vim-gradle'
+    description 'Uninstalls Gradle syntax highlighting bundle.'
+
+    delete "${vimHome}/bundle/vim-gradle"
 }
