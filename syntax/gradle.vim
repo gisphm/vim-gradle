@@ -1,8 +1,8 @@
 " Vim syntax file
-" Language:         Gradle
-" Maintainer:       Vít Kotačka
-" URL:              https://bitbucket.org/sw-samuraj/vim-gradle
-" Latest Revision:  7 October 2015
+" Language:     Gradle
+" Maintainer:   Vít Kotačka
+" URL:          https://bitbucket.org/sw-samuraj/vim-gradle
+" Version:      0.1
 
 if exists("b:current_syntax")
     finish
