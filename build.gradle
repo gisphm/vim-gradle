@@ -18,5 +18,6 @@ task uninstallVimGradle(type: Delete) {
     description 'Uninstalls Gradle syntax highlighting for Vim.'
 
     delete "${vimHome}/syntax/gradle.vim",
-           "${vimHome}/ftdetect/gradle.vim"
+           "${vimHome}/ftdetect/gradle.vim",
+           "${vimHome}/compiler/gradle.vim"
 }
