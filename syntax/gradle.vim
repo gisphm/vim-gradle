@@ -59,13 +59,18 @@ syn match groovyString "'''\_.*'''"
 syn match groovyString '"""\_.*"""'
 " Groovy Comments
 syn match groovyComment '//.*$'
-syn match groovyComment '/\*\_.*\*/'
 " Groovy Map Keys
 syn match groovyMapKeys '\w\+:'
 
 " ============
 " Regions
 " ============
+syn region groovyComment start="/\*" end="\*/" fold
+syn region groovyFoldBlock start="{" end="}" fold transparent
+
+" Fold
+set foldmethod=syntax
+set foldlevel=20
 
 " ============
 " Syntax highlighting
