@@ -5,6 +5,7 @@ The purpose of this project is to maintain missing *Gradle* capabilities in *Vim
 * File extension recognition
 * Syntax highlighting
 * Folding
+* Additional folding for *Groovy* files
 * TBD
 
 ## Installation ##
@@ -16,7 +17,7 @@ If you are using [Vim Pathogen](https://github.com/tpope/vim-pathogen) plugin, t
 ```
 #!shell
 cd ~/.vim/bundle
-hg clone https://sw-samuraj@bitbucket.org/sw-samuraj/vim-gradle
+hg clone https://bitbucket.org/sw-samuraj/vim-gradle
 ```
 
 ### Classic Vim Layout ###

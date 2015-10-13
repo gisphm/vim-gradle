@@ -11,6 +11,7 @@ task installVimball(type: Copy) {
         include 'syntax/gradle.vim'
         include 'ftdetect/gradle.vim'
         include 'compiler/gradle.vim'
+        include 'after/syntax/groovy.vim'
     }
     into vimHome
 }
@@ -21,7 +22,8 @@ task uninstallVimball(type: Delete) {
 
     delete "${vimHome}/syntax/gradle.vim",
            "${vimHome}/ftdetect/gradle.vim",
-           "${vimHome}/compiler/gradle.vim"
+           "${vimHome}/compiler/gradle.vim",
+           "${vimHome}/after/syntax/groovy.vim"
 }
 
 task installBundle(type: Copy) {
@@ -32,6 +34,8 @@ task installBundle(type: Copy) {
         include 'syntax/gradle.vim'
         include 'ftdetect/gradle.vim'
         include 'compiler/gradle.vim'
+        include 'after/syntax/groovy.vim'
+        include 'README.md'
         include 'LICENSE.txt'
     }
     into "${vimHome}/bundle/vim-gradle"
