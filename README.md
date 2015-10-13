@@ -97,4 +97,4 @@ I'll be happy with any participation or feedback. Please, feel free to:
 
 ## License ##
 
-The **gradle-jaxws-plugin** is published under [BSD 3-Clause](http://opensource.org/licenses/BSD-3-Clause) license.
+The **vim-gradle** plugin is published under [BSD 3-Clause](http://opensource.org/licenses/BSD-3-Clause) license.
