@@ -86,10 +86,15 @@ for the *classic* layout.
 
 * TBD
 
-## Contribution ##
+## Contribution guidelines ##
 
-TBD
+I'll be happy with any participation or feedback. Please, feel free to:
+
+* [fork](https://bitbucket.org/sw-samuraj/vim-gradle/fork) the project
+* send me a [pull request](https://bitbucket.org/sw-samuraj/vim-gradle/pull-requests/new)
+* [track](https://bitbucket.org/sw-samuraj/vim-gradle/issues?status=new&status=open) a bug, or an enhancement
+* or anything else what can improve this plugin.
 
 ## License ##
 
-TBD
+The **gradle-jaxws-plugin** is published under [BSD 3-Clause](http://opensource.org/licenses/BSD-3-Clause) license.
