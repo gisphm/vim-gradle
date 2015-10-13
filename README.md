@@ -25,7 +25,21 @@ TBD
 
 ### Through the Gradle ###
 
-TBD
+Your interest in the *Vim-Gradle* plugin probably means that you have *Gradle* already installed. Then you can run either
+
+```
+#!shell
+gradle installBundle
+```
+
+for *Pathogen*-like installation, or
+
+```
+#!shell
+gradle installVimball
+```
+
+for *classic*-like installation.
 
 ## Uninstallation ##
 
