@@ -56,7 +56,21 @@ TBD
 
 ### Through the Gradle ###
 
-TBD
+If you have *Gradle* already installed, then you can uninstall *Vim-Gradle* by
+
+```
+#!shell
+gradle uninstallBundle
+```
+
+for the *Pathogen* bundle, or
+
+```
+#!shell
+gradle uninstallVimball
+```
+
+for the *classic* layout.
 
 ## TODO ##
 
