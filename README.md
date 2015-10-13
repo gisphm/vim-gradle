@@ -22,7 +22,12 @@ hg clone https://bitbucket.org/sw-samuraj/vim-gradle
 
 ### Classic Vim Layout ###
 
-TBD
+If you prefer the traditional *Vim* layout, you can copy all the directories to your `$VIM_HOME`:
+
+```
+#!shell
+cp -r syntax ftdetect compiler after ~/.vim
+```
 
 ### Through the Gradle ###
 
@@ -53,7 +58,11 @@ rm -rf ~/.vim/bundle/vim-gradle
 
 ### Classic Vim Layout ###
 
-TBD
+```
+#!shell
+cd ~/.vim
+rm -rf syntax/gradle.vim ftdetect/gradle.vim compiler/gradle.vim after/syntax/groovy.vim
+```
 
 ### Through the Gradle ###
 
