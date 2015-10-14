@@ -57,6 +57,17 @@ distributions {
     main {
         contents {
             from(projectDir) {
+                exclude 'build'
+                exclude '.gradle'
+                exclude '**/*.swp'
+            }
+        }
+    }
+
+    vim {
+        contents {
+            baseName = project.name
+            from(projectDir) {
                 exclude 'build.gradle'
                 exclude 'LICENSE.txt'
                 exclude 'README.md'
