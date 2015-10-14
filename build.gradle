@@ -1,3 +1,5 @@
+apply plugin: 'distribution'
+
 version = '0.1'
 
 def userHome = System.properties['user.home']
@@ -9,6 +11,7 @@ task installVimball(type: Copy) {
 
     from(projectDir) {
         exclude 'build.gradle'
+        exclude 'build'
         exclude 'LICENSE.txt'
         exclude 'README.md'
         exclude '.gradle'
@@ -36,6 +39,7 @@ task installBundle(type: Copy) {
 
     from(projectDir) {
         exclude 'build.gradle'
+        exclude 'build'
         exclude '.gradle'
         exclude '**/*.swp'
     }
@@ -47,4 +51,19 @@ task uninstallBundle(type: Delete) {
     description 'Uninstalls Gradle syntax highlighting bundle.'
 
     delete "${vimHome}/bundle/vim-gradle"
+}
+
+distributions {
+    main {
+        contents {
+            from(projectDir) {
+                exclude 'build.gradle'
+                exclude 'LICENSE.txt'
+                exclude 'README.md'
+                exclude 'build'
+                exclude '.gradle'
+                exclude '**/*.swp'
+            }
+        }
+    }
 }

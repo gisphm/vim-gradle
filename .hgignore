@@ -1,5 +1,6 @@
 syntax: glob
 
+build
 .gradle
 *.swp
 .DS_Store
