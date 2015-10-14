@@ -44,7 +44,7 @@ syn keyword gradleRepositories maven mavenCentral mavenLocal
 syn keyword gradleConfigurations classpath compile runtime testCompile testRuntime
 syn keyword gradleConfigurations providedCompile providedRuntime
 syn keyword gradleFunction gradleApi localGroovy
-syn keyword gradleInnerBlock dirs from include into url
+syn keyword gradleInnerBlock dirs exclude from include into url
 syn keyword gradleInnerBlock credentials password username
 syn keyword groovyType def
 
