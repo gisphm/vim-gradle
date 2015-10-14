@@ -8,10 +8,11 @@ task installVimball(type: Copy) {
     description 'Installs Gradle syntax highlighting for Vim as Vimball .'
 
     from(projectDir) {
-        include 'syntax/gradle.vim'
-        include 'ftdetect/gradle.vim'
-        include 'compiler/gradle.vim'
-        include 'after/syntax/groovy.vim'
+        exclude 'build.gradle'
+        exclude 'LICENSE.txt'
+        exclude 'README.md'
+        exclude '.gradle'
+        exclude '**/*.swp'
     }
     into vimHome
 }
@@ -20,10 +21,13 @@ task uninstallVimball(type: Delete) {
     group 'vim-gradle'
     description 'Uninstalls Gradle syntax highlighting Vimball.'
 
-    delete "${vimHome}/syntax/gradle.vim",
-           "${vimHome}/ftdetect/gradle.vim",
+    delete "${vimHome}/after/syntax/groovy.vim",
            "${vimHome}/compiler/gradle.vim",
-           "${vimHome}/after/syntax/groovy.vim"
+           "${vimHome}/ctags/gradle.ctags",
+           "${vimHome}/ctags/groovy.ctags",
+           "${vimHome}/ftdetect/gradle.vim",
+           "${vimHome}/ftplugin/tagbar.vim",
+           "${vimHome}/syntax/gradle.vim"
 }
 
 task installBundle(type: Copy) {
@@ -31,12 +35,9 @@ task installBundle(type: Copy) {
     description 'Installs Gradle syntax highlighting for Vim as bundle.'
 
     from(projectDir) {
-        include 'syntax/gradle.vim'
-        include 'ftdetect/gradle.vim'
-        include 'compiler/gradle.vim'
-        include 'after/syntax/groovy.vim'
-        include 'README.md'
-        include 'LICENSE.txt'
+        exclude 'build.gradle'
+        exclude '.gradle'
+        exclude '**/*.swp'
     }
     into "${vimHome}/bundle/vim-gradle"
 }
