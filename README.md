@@ -26,7 +26,7 @@ If you prefer the traditional *Vim* layout, you can copy all the directories to 
 
 ```
 #!shell
-cp -r syntax ftdetect compiler after ~/.vim
+cp -r after compiler ctags ftdetect ftplugin syntax ~/.vim
 ```
 
 ### Through the Gradle ###
