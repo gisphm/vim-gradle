@@ -5,8 +5,13 @@ The purpose of this project is to maintain missing *Gradle* capabilities in *Vim
 * File extension recognition
 * Syntax highlighting
 * Folding
-* Additional folding for *Groovy* files
+* *Ctags* support for *Tagbar* plugin
 * TBD
+
+Additionally, some missing *Groovy* features are provided as well:
+
+* Folding for *Groovy* files
+* Groovy *Ctags* support for *Tagbar* plugin
 
 ## Installation ##
 
