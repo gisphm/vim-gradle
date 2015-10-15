@@ -6,7 +6,6 @@ The purpose of this project is to maintain missing *Gradle* capabilities in *Vim
 * Syntax highlighting
 * Folding
 * *Ctags* support for *Tagbar* plugin
-* TBD
 
 Additionally, some missing *Groovy* features are provided as well:
 
@@ -89,7 +88,8 @@ for the *classic* layout.
 
 ## TODO ##
 
-* TBD
+* Add `:gradle` command for running *Gradle* tasks.
+* Improve *Ctags* mapping for *Gradle* and *Groovy* files.
 
 ## Contribution guidelines ##
 
