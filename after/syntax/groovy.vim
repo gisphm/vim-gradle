@@ -2,7 +2,7 @@
 " Language:     Groovy
 " Maintainer:   Vít Kotačka
 " URL:          https://bitbucket.org/sw-samuraj/vim-gradle
-" Version:      0.1
+" Version:      0.2-SNAPSHOT
 
 " The default Groovy syntax file doesn't contain folding,
 " so it's additionally added here.

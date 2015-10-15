@@ -2,7 +2,7 @@
 " Language:     Gradle
 " Maintainer:   Vít Kotačka
 " URL:          https://bitbucket.org/sw-samuraj/vim-gradle
-" Version:      0.1
+" Version:      0.2-SNAPSHOT
 
 if exists("current_compiler")
     finish
