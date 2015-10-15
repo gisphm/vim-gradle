@@ -88,6 +88,7 @@ for the *classic* layout.
 
 ## TODO ##
 
+* Add Vim documentation (available through `:help` command).
 * Add `:gradle` command for running *Gradle* tasks.
 * Improve *Ctags* mapping for *Gradle* and *Groovy* files.
 
