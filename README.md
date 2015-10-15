@@ -1,4 +1,4 @@
-# Vim-Gradle #
+# vim-gradle #
 
 The purpose of this project is to maintain missing *Gradle* capabilities in *Vim*. Particularly:
 
@@ -35,7 +35,7 @@ cp -r after compiler ctags ftdetect ftplugin syntax ~/.vim
 
 ### Through the Gradle ###
 
-Your interest in the *Vim-Gradle* plugin probably means that you have *Gradle* already installed. Then you can run either
+Your interest in the *vim-gradle* plugin probably means that you have *Gradle* already installed. Then you can run either
 
 ```
 #!shell
@@ -70,7 +70,7 @@ rm -rf syntax/gradle.vim ftdetect/gradle.vim compiler/gradle.vim after/syntax/gr
 
 ### Through the Gradle ###
 
-If you have *Gradle* already installed, then you can uninstall *Vim-Gradle* by
+If you have *Gradle* already installed, then you can uninstall *vim-gradle* by
 
 ```
 #!shell
