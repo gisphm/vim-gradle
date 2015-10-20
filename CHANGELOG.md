@@ -6,7 +6,7 @@ Feature and bugfix version.
 
 ### New Features ###
 
-* TBD
+* Add access modifiers to methods and fields.
 
 ### Bugfixes ###
 
