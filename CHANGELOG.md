@@ -10,8 +10,9 @@ Feature and bugfix version.
 
 ### Bugfixes ###
 
-* `abstract` method doesn't appear in the outline.
-* Method with 2 parameters doesn't appear in the outline.
+* `abstract` method doesn't appear in the Tagbar outline.
+* Method with 2 parameters doesn't appear in the Tagbar outline.
+* `protected` field doesn't appear in the Tagbar outline.
 
 ## 0.1 ##
 
