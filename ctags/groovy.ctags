@@ -1,16 +1,16 @@
 --langdef=Groovy
 --langmap=Groovy:.groovy
---regex-Groovy=/^\s*package\s+([a-zA-Z0-9.-_]+)/\1/p,package/
---regex-Groovy=/^\s*(abstract)?\s*(private|public)?\s*class\s+([A-Za-z0-9_]+)\s+/\3/c,class/
---regex-Groovy=/^\s*(abstract)?\s*public\s+(def|String|void)\s+([a-zA-Z0-9_]+\([A-Za-z0-9 _,]*\))\s+/+\3/m,public method/
---regex-Groovy=/^\s*(abstract)?\s*protected\s+(def|String|void)\s+([a-zA-Z0-9_]+\([A-Za-z0-9 _,]*\))\s+/#\3/m,protected method/
---regex-Groovy=/^\s*(abstract)?\s*(def|String|void)\s+([a-zA-Z0-9_]+\([A-Za-z0-9 _,]*\))\s+/~\3/m,package method/
---regex-Groovy=/^\s*(abstract)?\s*private\s+(def|String|void)\s+([a-zA-Z0-9_]+\([A-Za-z0-9 _,]*\))\s+/-\3/m,private method/
---regex-Groovy=/^\s*public\s+(def|String|File|Logger)\s+([a-zA-Z0-9_]+)$/+\2/f,public field/
---regex-Groovy=/^\s*protected\s+(def|String|File|Logger)\s+([a-zA-Z0-9_]+)$/#\2/f,protected field/
---regex-Groovy=/^\s*(def|String|File|Logger)\s+([a-zA-Z0-9_]+)$/~\2/f,package field/
---regex-Groovy=/^\s*private\s+(def|String|File|Logger)\s+([a-zA-Z0-9_]+)$/-\2/f,private field/
---regex-Groovy=/^\s*public\s+(def|String|File|Logger)\s+([a-zA-Z0-9_]+)\s+=/+\2/f,public field/
---regex-Groovy=/^\s*protected\s+(def|String|File|Logger)\s+([a-zA-Z0-9_]+)\s+=/#\2/f,protected field/
---regex-Groovy=/^\s*(def|String|File|Logger)\s+([a-zA-Z0-9_]+)\s+=/~\2/f,package field/
---regex-Groovy=/^\s*private\s+(def|String|File|Logger)\s+([a-zA-Z0-9_]+)\s+=/-\2/f,private field/
+--regex-Groovy=/^[ \t]*package[ \t]+([a-zA-Z0-9.-_]+)/\1/p,package/
+--regex-Groovy=/^[ \t]*(abstract)?[ \t]*(private|public)?[ \t]*class[ \t]+([A-Za-z0-9_]+)[ \t]+/\3/c,class/
+--regex-Groovy=/^[ \t]*(abstract)?[ \t]*public[ \t]+(def|String|void)[ \t]+([a-zA-Z0-9_]+\([A-Za-z0-9 _,]*\))[ \t]+/+\3/m,public method/
+--regex-Groovy=/^[ \t]*(abstract)?[ \t]*protected[ \t]+(def|String|void)[ \t]+([a-zA-Z0-9_]+\([A-Za-z0-9 _,]*\))[ \t]+/#\3/m,protected method/
+--regex-Groovy=/^[ \t]*(abstract)?[ \t]*(def|String|void)[ \t]+([a-zA-Z0-9_]+\([A-Za-z0-9 _,]*\))[ \t]+/~\3/m,package method/
+--regex-Groovy=/^[ \t]*(abstract)?[ \t]*private[ \t]+(def|String|void)[ \t]+([a-zA-Z0-9_]+\([A-Za-z0-9 _,]*\))[ \t]+/-\3/m,private method/
+--regex-Groovy=/^[ \t]*public[ \t]+(def|String|File|Logger)[ \t]+([a-zA-Z0-9_]+)$/+\2/f,public field/
+--regex-Groovy=/^[ \t]*protected[ \t]+(def|String|File|Logger)[ \t]+([a-zA-Z0-9_]+)$/#\2/f,protected field/
+--regex-Groovy=/^[ \t]*(def|String|File|Logger)[ \t]+([a-zA-Z0-9_]+)$/~\2/f,package field/
+--regex-Groovy=/^[ \t]*private[ \t]+(def|String|File|Logger)[ \t]+([a-zA-Z0-9_]+)$/-\2/f,private field/
+--regex-Groovy=/^[ \t]*public[ \t]+(def|String|File|Logger)[ \t]+([a-zA-Z0-9_]+)[ \t]+=/+\2/f,public field/
+--regex-Groovy=/^[ \t]*protected[ \t]+(def|String|File|Logger)[ \t]+([a-zA-Z0-9_]+)[ \t]+=/#\2/f,protected field/
+--regex-Groovy=/^[ \t]*(def|String|File|Logger)[ \t]+([a-zA-Z0-9_]+)[ \t]+=/~\2/f,package field/
+--regex-Groovy=/^[ \t]*private[ \t]+(def|String|File|Logger)[ \t]+([a-zA-Z0-9_]+)[ \t]+=/-\2/f,private field/
