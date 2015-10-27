@@ -10,11 +10,12 @@ Feature and bugfix version.
 
 ### Bugfixes ###
 
-* `abstract` method doesn't appear in the Tagbar outline.
-* Method with 2 parameters doesn't appear in the Tagbar outline.
-* `protected` field doesn't appear in the Tagbar outline.
-* `interface` doesn't appear in the Tagbar outline.
+* `abstract` method doesn't appear in the *Tagbar* outline.
+* Method with 2 parameters doesn't appear in the *Tagbar* outline.
+* `protected` field doesn't appear in the *Tagbar* outline.
+* `interface` doesn't appear in the *Tagbar* outline.
 * *Tagbar* on Mac doesn't display *Gradle* tasks in the outline.
+* Constructor doesn't appear in the *Tagbar* outline.
 
 ## 0.1 ##
 
