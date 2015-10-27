@@ -8,7 +8,8 @@ endif
 let g:tagbar_type_gradle = {
     \ 'ctagstype' : 'Gradle',
     \ 'kinds'     : [
-        \ 't:tasks'
+        \ 't:tasks',
+        \ 'm:methods'
     \ ],
     \ 'deffile'   : expand('<sfile>:p:h:h') . '/ctags/gradle.ctags'
 \ }
