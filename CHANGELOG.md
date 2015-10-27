@@ -7,6 +7,7 @@ Feature and bugfix version.
 ### New Features ###
 
 * Add access modifiers to methods and fields.
+* Outline for `build.gradle` displays methods.
 
 ### Bugfixes ###
 
