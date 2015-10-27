@@ -4,6 +4,10 @@
 --regex-Groovy=/^[ \t]*(abstract)?[ \t]*(private|public)?[ \t]*class[ \t]+([A-Za-z0-9_]+)[ \t]+/\3/c,class/
 --regex-Groovy=/^[ \t]*(private|public)?[ \t]*interface[ \t]+([A-Za-z0-9_]+)[ \t]+/\2/i,interface/
 --regex-Groovy=/^[ \t]*(private|public)?[ \t]*enum[ \t]+([A-Za-z0-9_]+)[ \t]+/\2/e,enum/
+--regex-Groovy=/^[ \t]*public[ \t]+([a-zA-Z0-9_]+\([A-Za-z0-9 _,]*\))[ \t]+/+\1/r,public constructor/
+--regex-Groovy=/^[ \t]*protected[ \t]+([a-zA-Z0-9_]+\([A-Za-z0-9 _,]*\))[ \t]+/#\1/r,protected constructor/
+--regex-Groovy=/^[ \t]*([a-zA-Z0-9_]+\([A-Za-z0-9 _,]*\))[ \t]+/~\1/r,package constructor/
+--regex-Groovy=/^[ \t]*private[ \t]+([a-zA-Z0-9_]+\([A-Za-z0-9 _,]*\))[ \t]+/-\1/r,private constructor/
 --regex-Groovy=/^[ \t]*(abstract)?[ \t]*public[ \t]+(def|String|void)[ \t]+([a-zA-Z0-9_]+\([A-Za-z0-9 _,]*\))[ \t]+/+\3/m,public method/
 --regex-Groovy=/^[ \t]*(abstract)?[ \t]*protected[ \t]+(def|String|void)[ \t]+([a-zA-Z0-9_]+\([A-Za-z0-9 _,]*\))[ \t]+/#\3/m,protected method/
 --regex-Groovy=/^[ \t]*(abstract)?[ \t]*(def|String|void)[ \t]+([a-zA-Z0-9_]+\([A-Za-z0-9 _,]*\))[ \t]+/~\3/m,package method/

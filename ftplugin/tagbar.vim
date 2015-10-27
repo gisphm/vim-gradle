@@ -20,6 +20,7 @@ let g:tagbar_type_groovy = {
         \ 'c:class',
         \ 'i:interface',
         \ 'e:enum',
+        \ 'r:constructors',
         \ 'm:methods',
         \ 'f:fields'
     \ ],
