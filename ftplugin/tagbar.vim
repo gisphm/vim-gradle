@@ -18,12 +18,13 @@ let g:tagbar_type_groovy = {
     \ 'ctagstype' : 'Groovy',
     \ 'kinds'     : [
         \ 'p:package',
-        \ 'c:class',
-        \ 'i:interface',
-        \ 'e:enum',
+        \ 'c:classes',
+        \ 'i:interfaces',
+        \ 't:traits',
+        \ 'e:enums',
         \ 'r:constructors',
         \ 'm:methods',
-        \ 'f:fields'
+        \ 'f:fields:1'
     \ ],
     \ 'deffile'   : expand('<sfile>:p:h:h') . '/ctags/groovy.ctags'
 \ }
